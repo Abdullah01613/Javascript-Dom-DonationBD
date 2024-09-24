@@ -5,7 +5,7 @@ donateNowButton.addEventListener("click", function(){
         alert("Opps give a positive Number");
     }
     const coinNoakhali = document.getElementById("coinNoakhali");
-    coinNoakhali.innerText = floodNoakhali;
+    coinNoakhali.innerText = floodNoakhali.toFixed(2);
 });
 
 
@@ -16,7 +16,7 @@ donateNowBtnFeni.addEventListener("click", function(){
         alert("Opps give a positive Number");
     }
     const coinFeni = document.getElementById("coinFeni");
-    coinFeni.innerText = floodFeni;
+    coinFeni.innerText = floodFeni.toFixed(2);
 });
 
 
@@ -27,5 +27,18 @@ donateNowInjured.addEventListener("click", function(){
         alert("Opps give a positive Number");
     }
     const coinInjured = document.getElementById("coinInjured");
-    coinInjured.innerText = Injured;
+    coinInjured.innerText = Injured.toFixed(2);
 });
+
+// buton function
+
+const historyButton = document.getElementById("history-btn");
+const donateButton = document.getElementById("donate-btn");
+historyButton.addEventListener ('click', function() {
+    historyButton.classList.add("bg-yellow-500")
+    donateButton.classList.remove("bg-yellow-500")
+    document.getElementById("card-section").classList.add("hidden")
+})
+
+
+
