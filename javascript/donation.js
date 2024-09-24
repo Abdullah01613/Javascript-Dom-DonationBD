@@ -4,8 +4,10 @@ donateNowButton.addEventListener("click", function(){
     if (floodNoakhali < 0 ) {
         alert("Opps give a positive Number");
     }
+    const coin = document.getElementById("navCoin")
     const coinNoakhali = document.getElementById("coinNoakhali");
     coinNoakhali.innerText = floodNoakhali.toFixed(2);
+    coin.innerText = floodNoakhali.toFixed(2);
     
  
     history = document.createElement("div")
@@ -30,8 +32,10 @@ donateNowBtnFeni.addEventListener("click", function(){
     if (floodFeni < 0 ) {
         alert("Opps give a positive Number");
     }
+    const coin = document.getElementById("navCoin")
     const coinFeni = document.getElementById("coinFeni");
     coinFeni.innerText = floodFeni.toFixed(2);
+    coin.innerText = floodFeni.toFixed(2);
 
     history = document.createElement("div")
     history.innerText = 
@@ -55,8 +59,10 @@ donateNowInjured.addEventListener("click", function(){
     if (Injured < 0 ) {
         alert("Opps give a positive Number");
     }
+    const coin = document.getElementById("navCoin")
     const coinInjured = document.getElementById("coinInjured");
     coinInjured.innerText = Injured.toFixed(2);
+    coin.innerText = Injured.toFixed(2);
 
     history = document.createElement("div")
     history.innerText = 
@@ -83,6 +89,3 @@ historyButton.addEventListener ('click', function() {
     document.getElementById("card-section").classList.add("hidden")
     document.getElementById("history-section").classList.remove("hidden")
 })
-
-
-
